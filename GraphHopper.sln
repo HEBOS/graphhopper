@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphHopper.Directions.Api", "GraphHopper.Directions.Api\GraphHopper.Directions.Api.csproj", "{AD479867-5734-4E4E-93F2-44139C661A37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B9109BB-C9ED-4BE5-8565-E2E40386D635}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ACC6D82C-A6F4-4C1A-8516-71B0F4DFB1DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphHopper.Integration.Tests", "GraphHopper.Integration.Tests\GraphHopper.Integration.Tests.csproj", "{CEE030B7-647F-4503-A25A-44ECCEB860C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphHopper.Unit.Tests", "GraphHopper.Unit.Tests\GraphHopper.Unit.Tests.csproj", "{05B3A163-0ED6-467A-9DDF-66B695221C2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD479867-5734-4E4E-93F2-44139C661A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD479867-5734-4E4E-93F2-44139C661A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD479867-5734-4E4E-93F2-44139C661A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD479867-5734-4E4E-93F2-44139C661A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE030B7-647F-4503-A25A-44ECCEB860C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE030B7-647F-4503-A25A-44ECCEB860C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE030B7-647F-4503-A25A-44ECCEB860C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE030B7-647F-4503-A25A-44ECCEB860C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B3A163-0ED6-467A-9DDF-66B695221C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B3A163-0ED6-467A-9DDF-66B695221C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B3A163-0ED6-467A-9DDF-66B695221C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B3A163-0ED6-467A-9DDF-66B695221C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEE030B7-647F-4503-A25A-44ECCEB860C5} = {ACC6D82C-A6F4-4C1A-8516-71B0F4DFB1DE}
+		{05B3A163-0ED6-467A-9DDF-66B695221C2A} = {ACC6D82C-A6F4-4C1A-8516-71B0F4DFB1DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D03FB27A-8A09-4A28-ACE8-7C2CD5B64D40}
+	EndGlobalSection
+EndGlobal
