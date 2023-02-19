@@ -11,6 +11,7 @@
     <Copyright>Ibicom Ltd</Copyright>
     <PackageProjectUrl>https://github.com/HEBOS/graphhopper</PackageProjectUrl>
     <PackageTags>graphhopper;delivery;traveling;salesman;vehicle;routing;problem</PackageTags>
+    <Version>1.0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

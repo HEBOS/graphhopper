@@ -10,7 +10,7 @@ namespace GraphHopper.Directions.Api
     public class DirectionsClient
     {
         private readonly string _apiKey;
-        private const string DefaultUrl = "https://graphhopper.com/api/1/vrp?key={0}";
+        private const string DefaultUrl = "https://graphhopper.com";
         private readonly HttpClient _client;
         private readonly string _baseUrl;
 
@@ -39,7 +39,7 @@ namespace GraphHopper.Directions.Api
             }
 
             _apiKey = apiKey;
-            _baseUrl = baseUrl;
+            _baseUrl = baseUrl.EndsWith("/") ? baseUrl.Remove(baseUrl.Length - 1) : baseUrl;
             _client = new HttpClient();
         }
 
@@ -72,7 +72,7 @@ namespace GraphHopper.Directions.Api
             HttpResponseMessage response;
             try
             {
-                response = await _client.PostAsync(string.Format(_baseUrl, _apiKey), byteContent, cancellationToken);
+                response = await _client.PostAsync(string.Concat(_baseUrl, $"/api/1/vrp?key={_apiKey}"), byteContent, cancellationToken);
             }
             catch (TaskCanceledException e)
             {
